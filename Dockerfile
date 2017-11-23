@@ -4,7 +4,6 @@ ARG SONAR_SCANNER_VERS=3.0.3.778
 
 RUN apk --no-cache update && \
     apk add openssl
-    
 
 RUN wget -q https://dl.bintray.com/sonarsource/SonarQube/org/sonarsource/scanner/cli/sonar-scanner-cli/$SONAR_SCANNER_VERS/sonar-scanner-cli-$SONAR_SCANNER_VERS.zip -O /tmp/sonar-scanner.zip
 
